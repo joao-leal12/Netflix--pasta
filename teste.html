@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; 
+            padding: 0; 
+            list-style: none; 
+
+
+
+
+        }
+        .container {
+
+            max-width: 500px; 
+            margin: 0 auto;
+            position: relative; 
+           
+        }
+
+        li {
+
+            background-color: grey; 
+            
+            position : relative; 
+
+        }
+
+
+        button { 
+
+            border: 0; 
+            background-color: grey;
+            color: white; 
+            font-size: 32px; 
+            text-align: left; 
+            display: block; 
+            border-bottom : 1px solid black;    
+            width: 100%; 
+            padding: 30px 20px; 
+            cursor: pointer;
+           
+        }
+
+        div{
+
+            height: 300px; 
+            padding: 12px 20px;  
+            border-top: 1px solid black; 
+           
+        }
+
+        div > p{
+
+
+            color: white; 
+            font-size: 24px; 
+
+
+        }
+        .comando{
+
+            display: none; 
+
+
+        }
+        
+       
+    </style>
+    <script> 
+
+        function treinando (T) {
+
+            if(T === 'teste') {
+
+
+                document.getElementById('testando').className ='comando'
+                document.getElementById('botao').className ='div'
+                document.getElementById('Abrindo').className ='comando'
+
+
+            } else if(T === 'fechar') {
+
+
+                document.getElementById('testando').className ='div'
+                document.getElementById('botao').className ='comando'
+                document.getElementById('Abrindo').className='div'
+
+
+            }
+
+           
+
+        }
+    
+    </script>
+
+</head>
+<body>
+  <div class="container">
+      <ul>
+        <li>
+            <button id="Abrindo" class="btn-close "onclick="treinando('teste') " >
+
+                O que é a Netflix
+           
+
+           
+            
+        </button>
+        <button class="btn"  id="botao"  onclick="treinando('fechar') ">O que é a Netflix </button>
+         
+        <div id="testando">
+                <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
+                </p>
+                <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+            </div>
+       
+    
+            
+           
+    
+    </li>
+      </ul>
+  </div>
+  <
+</body>
+</html>
