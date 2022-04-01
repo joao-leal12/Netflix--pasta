@@ -1,0 +1,45 @@
+
+
+body,html{
+
+    height: 100%; 
+    background: url('imagens/imagem-netflix.jpg'); 
+
+
+
+}
+
+
+
+body::before{
+
+    content: ' '; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.8)),color-stop(60%,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    padding: inherit;
+    border-bottom: 8px solid #222;  
+
+
+
+
+}
+
+
+.estilo { 
+
+    background: rgba(0,0,0,.4);
+    width: 314px; 
+    padding: 60px 68px 40px 68px; 
+
+
+
+}
